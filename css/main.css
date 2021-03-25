@@ -1,0 +1,705 @@
+/**************************** Global ***************************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,800,900|Raleway:400,700,800,900&display=swap');
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*
+
+*/
+
+/****************** Custom Scrollbar *****************/
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0069d9;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+
+.heading {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sec-mr {
+    margin: 70px 0
+}
+
+.tr-2 {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+.w-80 {
+    width: 80%
+}
+
+.diy-btn {
+    padding: 10px 40px;
+    font-size: 17px;
+    outline: 0;
+    border-radius: 0
+}
+
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-through {
+    text-decoration: line-through;
+
+}
+
+.heading h2 {
+    font-size: 50px
+}
+
+
+.form-control{
+    border-radius: 0;
+    outline: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+
+/****** Loader *****/
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+}
+
+.loader div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.loader span {
+    font-size: 35px;
+    color: #007bff;
+}
+
+/*********************************   Main Page    ********************************/
+
+/********* Start Navbar *********/
+
+.diy-navbar {
+    font-family: 'Raleway', sans-serif;
+}
+
+.diy-navbar .navbar-brand {
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 30px;
+}
+
+.diy-navbar .navbar-nav .nav-item {
+    padding: 20px 0 20px 26px;
+}
+
+.diy-navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
+    font-size: 17px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+}
+
+.diy-navbar .navbar-nav .nav-item .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00e3ff;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.diy-navbar .navbar-nav .nav-item .nav-link.active:after,
+.diy-navbar .navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+
+}
+
+.diy-navbar .navbar-toggler {
+    width: 65px;
+    font-size: 30px;
+    line-height: 1px;
+    border: 0;
+    outline: 0
+}
+
+.diy-navbar .navbar-toggler .toggler-icon {
+    width: 100%;
+    height: 2px;
+    background-color: #fff
+}
+
+.diy-navbar.bg-white .navbar-toggler .toggler-icon {
+    background-color: black
+}
+
+/********* Start Home *********/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative
+}
+
+
+
+.home .overlay,
+.sign-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #5433FF;
+    background: -o-linear-gradient(329deg, rgba(44, 69, 247, 0.8130602582830007) 18%, rgba(94, 44, 232, 0.8214636196275386) 100%);
+    background: linear-gradient(121deg, rgba(44, 69, 247, 0.8130602582830007) 18%, rgba(94, 44, 232, 0.8214636196275386) 100%);
+}
+
+.sign-wrapper {
+    height: 100vh
+}
+
+.home .banner {
+    padding: 0;
+}
+
+.home .banner h2 {
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.home .banner p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: #FFF;
+    color: #000 !important;
+    font-weight: 400;
+    display: inline-block
+}
+
+.home .sign-form {
+    position: relative;
+    width: 70%;
+    background-color: #FFF;
+    padding: 25px;
+}
+
+.home .sign-form form button {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -15px;
+    border-radius: 0;
+}
+
+.home .sign-form .splash img {
+    position: absolute;
+    width: 80px;
+    top: -32px;
+    right: -37px;
+}
+
+.home .sign-form .sign-up p {
+    font-size: 14px
+}
+
+.home .arrows-wrapper {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.home .arrows-wrapper img {
+    margin: -7px;
+    width: 40px;
+    opacity: 0;
+    -webkit-animation: arrows-opacity 1.5s infinite;
+            animation: arrows-opacity 1.5s infinite
+}
+
+.home .arrows-wrapper img:nth-child(1) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s
+}
+
+.home .arrows-wrapper img:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s
+}
+
+.home .arrows-wrapper img:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s
+}
+
+/************************************ About ********************/
+
+.about-img {
+    position: relative;
+    -webkit-transition: all 0.23s ease-in-out;
+    -o-transition: all 0.23s ease-in-out;
+    transition: all 0.23s ease-in-out
+}
+
+
+.about-img img {
+    width: 400px;
+}
+
+.about-img::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    background: #4274d5e8;
+    width: 309px;
+    height: 100%;
+    z-index: -1;
+    -webkit-box-shadow: 5px 5px 1px rgb(221, 209, 245);
+            box-shadow: 5px 5px 1px rgb(221, 209, 245);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+.about-img::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -15%;
+    background: #2e75d3e0;
+    width: 309px;
+    height: 100%;
+    z-index: -1;
+    -webkit-box-shadow: 5px 5px 1px rgb(221, 209, 245);
+            box-shadow: 5px 5px 1px rgb(221, 209, 245);
+    -webkit-transition: all 0.23s ease-in-out;
+    -o-transition: all 0.23s ease-in-out;
+    transition: all 0.23s ease-in-out
+}
+
+.about-img:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05)
+}
+
+
+.about-img:hover::after {
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px)
+}
+
+.about-img:hover::before {
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px)
+}
+
+
+
+/******************* Courses ****************/
+.courses {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card,
+.card img {
+    border-radius: 0
+}
+
+.courses .card .card-body .details .list-group .list-group-item {
+    padding: 10px 0;
+    border: 0;
+
+}
+
+.courses .card .card-body .details .list-group .list-group-item span {
+    font-weight: bold;
+    color: #000
+}
+
+.courses .card .card-body .details .price {
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.courses .card .card-body .details .price span {
+    color: #007bff;
+    font-weight: 500;
+
+}
+
+
+.courses .card .card-body .buttons .diy-btn {
+    padding: 8px 20px;
+    font-size: 15px
+}
+
+.courses .card .card-title a {
+    font-weight: 500;
+    font-size: 18px
+}
+
+.courses .more a {
+    font-size: 18px;
+    display: inline !important
+}
+
+
+
+/******************* Search **************/
+.search {
+    padding: 80px 0;
+    background-image: url(../img/search.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    position: relative
+}
+
+.search .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.search .input-group {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search .input-group .form-control {
+    padding: 30px 22px;
+}
+
+
+/************* plans ************/
+.plans {
+    font-family: 'Raleway', sans-serif;
+    -webkit-perspective: 500px;
+            perspective: 500px
+}
+
+.out-up {
+    -webkit-transform: translate3d(0, 0, 50px);
+            transform: translate3d(0, 0, 50px)
+}
+
+.plans .plan-price span {
+    font-size: 25px
+}
+
+.plans .plan-price .per {
+    font-size: 17px
+}
+
+
+/**************** contact ****************/
+.contact-form textarea {
+    height: 240px;
+    min-height: 240px;
+}
+
+
+/******************** Maps ************/
+#map {
+    height: 350px;
+    width: 100%
+}
+
+
+.accordion .card .card-header h2 button span {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+
+.accordion .card .card-header h2 button span.active {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+
+/********************** Footer *************************/
+.icons span a {
+    font-size: 20px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+
+.icons span a:hover {
+    color: #FFF !important
+}
+
+
+/********************************* Signing Pages **********************************/
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sign-wrapper {
+    position: relative;
+}
+
+.sign-wrapper .sign-form {
+    background-color: #FFF;
+    z-index: 9;
+    position: relative;
+    width: 420px
+}
+
+.sign-wrapper .sign-form button {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.sign-wrapper .sign-form .sign-up p {
+    font-size: 14px
+}
+
+/*********************************  Courses Page    **********************************************/
+.pages-home {
+    height: 70vh
+}
+
+.pages-home .banner h2 {
+    letter-spacing: 3px
+}
+
+.path p {
+    font-size: 18px
+}
+
+.single-course .sections .single-section .section-heading {
+    border-bottom: 2px solid #acacac;
+
+}
+
+.single-course .sections .single-section .section-heading h3 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.single-course .sections .single-section .section-heading h3 span {
+    font-weight: bold;
+    text-transform: capitalize
+}
+
+.single-course .sections .single-section .lecture {
+
+    border-bottom: 1px solid #acacac;
+
+}
+
+.single-course .sections .single-section .lecture h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.single-course .sections .single-section .lecture h3 span {
+    font-weight: lighter;
+    text-transform: capitalize
+}
+
+.teacher-wrapper{
+    background: #7c7c7c
+}
+
+
+
+
+/******** Animations & KeyFrames ********/
+@-webkit-keyframes arrows-opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px)
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px)
+    }
+}
+@keyframes arrows-opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px)
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px)
+    }
+}
+
+/************************** Responsive Breakpoints ************************/
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+
+    /****************** Home ****************/
+    .home .banner h2 {
+        letter-spacing: 2px
+    }
+
+    /****************** Courses ****************/
+    .courses .card .card-title a {
+        font-size: 18px;
+        font-weight: 600
+    }
+
+    .heading h2 {
+        font-size: 40px
+    }
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+
+    /****************** About ****************/
+    .about .about-img {
+        margin-right: 30px
+    }
+
+    .about .about-img img {
+        width: 360px
+    }
+
+    /****************** Plans ****************/
+    .out-up {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    .diy-navbar .navbar-nav .nav-item {
+        padding: 10px 0
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+
+    /****************** About ****************/
+    .about .about-img {
+        margin-right: 30px
+    }
+
+    .about .about-img img {
+        width: 360px
+    }
+}
